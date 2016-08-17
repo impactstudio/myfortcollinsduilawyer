@@ -8,6 +8,10 @@ class StaticController < ApplicationController
   def contact
   end
 
+  def contact_submission
+    
+  end
+
   def fort_collins_dui_lawyer
   end
 
