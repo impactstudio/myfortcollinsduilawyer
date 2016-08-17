@@ -16,15 +16,6 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address => 'mail.mohemoth.com',
-    user_name: "",
-    password: ""
-    domain: 'impactstud.io',
-    enable_starttls_auto: true,
-    authentication: 'plain',
-    port: 587
-  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
