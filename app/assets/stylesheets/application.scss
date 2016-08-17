@@ -63,6 +63,17 @@ h2 {
   font-size: 26px;
 }
 
+a {
+  color: $gold;
+  transition: ease-out .3s;
+}
+
+a:hover {
+  color: $denim;
+  text-decoration: none;
+  transition: ease .3s;
+}
+
 /* ======================
 2.0 HEADER
 ====================== */
@@ -73,6 +84,7 @@ h2 {
 #header-slogan, #header-tf-phone, #header-phone {
   float:right;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 #header-tf-phone, #header-phone {
@@ -80,20 +92,21 @@ h2 {
   font-weight: bold;
 }
 
-#header-tf-phone a, #header-phone a {
-  font-family: $sans;
-  font-weight: bold;
-  color: $gold;
-}
-
 #header-phone {
   clear: right;
+}
+
+#header-tf-phone span {
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1000px) {
   #header-logo, #header-slogan, #header-tf-phone, #header-phone {
     float:none;
     text-align:center;
+  }
+  #header-logo {
+    margin-bottom: 20px;
   }
   #header-slogan {
     font-size: 20px;
