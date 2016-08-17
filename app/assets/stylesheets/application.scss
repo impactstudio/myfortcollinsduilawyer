@@ -38,7 +38,6 @@ $gold: #aa9346;
 $denim: #053d84;
 $sand: #CBB054;
 
-
 body {
   background-color: #f9f9f9;
   margin: 0 auto;
@@ -61,6 +60,15 @@ h1 {
 h2 {
   line-height: 20px;
   font-size: 26px;
+}
+
+h3 {
+  line-height: 15px;
+  font-size: 20px;
+}
+
+h3 span {
+  font-weight: normal;
 }
 
 a {
@@ -90,26 +98,23 @@ a:hover {
 #header-tf-phone, #header-phone {
   font-family: $sans;
   font-weight: bold;
-}
-
-#header-phone {
   clear: right;
 }
 
-#header-tf-phone span {
-  font-weight: normal;
+@media screen and (max-width: 1250px) {
+  #header-slogan {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1070px) {
   #header-logo, #header-slogan, #header-tf-phone, #header-phone {
     float:none;
     text-align:center;
   }
+
   #header-logo {
     margin-bottom: 20px;
-  }
-  #header-slogan {
-    font-size: 20px;
   }
 }
 /* ======================
