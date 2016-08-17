@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'messages/new'
+  resources :messages, only: [:new, :create]
 
   root 'static#home'
   get '/about', to: 'static#about'

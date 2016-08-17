@@ -4,12 +4,19 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.create(message_params)
+    @message = Message.new(message_params)
+
+    if @message.valid?
+      ContactMailer.contact_confirmation(@message).deliver_now
+      redirect_to new_message_path, notice: "Thank you for your message."
+    else
+      render :new
+    end
   end
 
   private
 
   def message_params
-    params.require(:message).permit(:name, :email, :subject, :message)
+    params.require(:message).permit(:name, :email, :subject, :content)
   end
 end

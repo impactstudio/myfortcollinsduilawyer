@@ -1,5 +1,9 @@
 class ContactMailer < ApplicationMailer
-  def contact_confirmation
-    mail to: 'sam@impactstud.io', subject: "Contact Confirmation"
+  default to: "sam@impactstud.io"
+
+  def contact_confirmation(msg)
+    @msg = msg
+    
+    mail from: @msg.email , subject: @msg.subject, body: @msg.content
   end
 end
