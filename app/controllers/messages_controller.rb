@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       ContactMailer.contact_request(@message).deliver
-      redirect_to root_path, notice: "Thank you for your message."
+      redirect_to thank_you_path
     else
       render :new
     end
