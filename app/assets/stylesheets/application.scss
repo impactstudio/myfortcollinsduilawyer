@@ -29,10 +29,11 @@ MENU:
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans:400,700';
 
 $crimson: 'Crimson Text', serif;
-$sans:
+$sans: 'Open Sans', sans-serif;
+$cloudy: #f9f9f9;
 $gold: #aa9346;
 $denim: #053d84;
 $sand: #CBB054;
@@ -45,18 +46,57 @@ body {
 
 header {
   width: 80%;
+  margin: 30px 0;
+}
+
+h1, h2, h3 {
+  font-family: $crimson;
+}
+
+h1 {
+  line-height: 30px;
+  font-size: 30px;
+}
+
+h2 {
+  line-height: 20px;
+  font-size: 26px;
 }
 
 /* ======================
 2.0 HEADER
 ====================== */
-.logo {
+#header-logo {
+  float:left;
 }
 
+#header-slogan, #header-tf-phone, #header-phone {
+  float:right;
+  margin: 10px 0;
+}
+
+#header-tf-phone, #header-phone {
+  font-family: $sans;
+  font-weight: bold;
+}
+
+#header-tf-phone a, #header-phone a {
+  font-family: $sans;
+  font-weight: bold;
+  color: $gold;
+}
+
+#header-phone {
+  clear: right;
+}
 
 @media screen and (max-width: 1000px) {
-  .logo {
+  #header-logo, #header-slogan, #header-tf-phone, #header-phone {
+    float:none;
     text-align:center;
+  }
+  #header-slogan {
+    font-size: 20px;
   }
 }
 /* ======================
