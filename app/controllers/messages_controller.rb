@@ -7,8 +7,8 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.valid?
-      ContactMailer.contact_confirmation(@message).deliver_now
-      redirect_to new_message_path, notice: "Thank you for your message."
+      ContactMailer.contact_request(@message).deliver
+      redirect_to root_path, notice: "Thank you for your message."
     else
       render :new
     end

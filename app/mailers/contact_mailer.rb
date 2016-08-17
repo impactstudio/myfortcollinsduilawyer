@@ -1,9 +1,13 @@
 class ContactMailer < ApplicationMailer
-  default to: "sam@impactstud.io"
 
-  def contact_confirmation(msg)
+  # Subject can be set in your I18n file at config/locales/en.yml
+  # with the following lookup:
+  #
+  #   en.contact_mailer.contact_request.subject
+  #
+  def contact_request(msg)
     @msg = msg
-    
-    mail from: @msg.email , subject: @msg.subject, body: @msg.content
+
+    mail to: "sam@impactstud.io"
   end
 end
