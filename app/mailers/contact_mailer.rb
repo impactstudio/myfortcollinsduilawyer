@@ -8,6 +8,6 @@ class ContactMailer < ApplicationMailer
   def contact_request(msg)
     @msg = msg
 
-    mail to: "sam@impactstud.io"
+    mail to: "sam@impactstud.io", from: msg.email
   end
 end
