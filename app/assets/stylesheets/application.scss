@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+/*******************
+MENU:
+!!! media queries included in each section (if applicable)
+1.0 DEFAULT / LAYOUT
+2.0 HEADER
+3.0 HOME - GENERAL
+3.1 HOME - HERO
+3.2 HOME - WHAT ABOUT
+3.3 HOME - PROJECTS
+********************/
+
+/* ======================
+1.0 DEFAULT / LAYOUT
+====================== */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700';
+
+$crimson: 'Crimson Text', serif;
+$sans:
+$gold: #aa9346;
+$denim: #053d84;
+$sand: #CBB054;
+
+
+body {
+  background-color: #f9f9f9;
+  margin: 0 auto;
+}
+
+header {
+  width: 80%;
+}
+
+/* ======================
+2.0 HEADER
+====================== */
+.logo {
+}
+
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    text-align:center;
+  }
+}
+/* ======================
+3.0 HOME - GENERAL
+====================== */
+
+
+/* ======================
+3.1 HOME - HERO
+====================== */
+
+
+/* ======================
+3.2 HOME - WHAT ABOUT
+====================== */
+
+/* ======================
+3.2 HOME - PROJECTS
+====================== */
