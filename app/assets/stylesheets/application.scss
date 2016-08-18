@@ -115,6 +115,7 @@ a:hover {
 
 .navbar {
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 .navbar-default {
@@ -192,8 +193,13 @@ a:hover {
 
 .hero {
   width: 100%;
-  height: 200px;
+  height: 450px;
   background-color: $denim;
+  background-image: image-url("placeholder.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-position-y: 16px;
 }
 
 /* ======================
