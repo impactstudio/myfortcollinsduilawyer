@@ -39,6 +39,7 @@ $denim: #053d84;
 $sand: #CBB054;
 $in: ease .3s;
 $out: ease-out .3s;
+$brushed-pattern: image-url("brushed-pattern.png");
 
 body {
   background-color: #f9f9f9;
@@ -246,11 +247,6 @@ p, li, span, blockquote {
   }
 }
 
-
-/* ======================
-3.2 HOME - WHAT ABOUT
-====================== */
-
 /* ======================
 3.2 HOME - PRACTICE AREAS
 ====================== */
@@ -259,13 +255,15 @@ p, li, span, blockquote {
   padding: 50px;
   width: 100%;
   background-color: $sand;
+  background-image: $brushed-pattern;
 }
 
 .practice-area {
   background: $gold;
+  background-image: $brushed-pattern;
   text-align: center;
   height: 250px;
-  box-shadow: 0px 4px 18px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
   border-radius: 2px;
   transition: $out;
 }
