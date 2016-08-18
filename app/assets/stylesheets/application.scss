@@ -16,11 +16,13 @@
 MENU:
 !!! media queries included in each section (if applicable)
 1.0 DEFAULT / LAYOUT
+1.1 FORMS
 2.0 HEADER
 3.0 HOME - GENERAL
 3.1 HOME - HERO
-3.2 HOME - WHAT ABOUT
-3.3 HOME - PROJECTS
+3.2 HOME - PRACTICE AREAS
+3.3 HOME - CONTACT
+4.0 FOOTER
 ********************/
 
 /* ======================
@@ -40,6 +42,7 @@ $sand: #CBB054;
 $in: ease .3s;
 $out: ease-out .3s;
 $brushed-pattern: image-url("brushed-pattern.png");
+$shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
 
 body {
   background-color: #f9f9f9;
@@ -60,12 +63,12 @@ h1 {
 
 h2 {
   line-height: 20px;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 h3 {
   line-height: 15px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h3 span {
@@ -83,8 +86,72 @@ a:hover {
   transition: ease .3s;
 }
 
-p, li, span, blockquote {
+p, li, span, blockquote, dd, dt {
   font-family: $sans;
+  font-weight: normal;
+}
+
+.denim-colored-container {
+  background-color: $denim;
+}
+
+strong {
+  font-weight: bold;
+  color: $gold !important;
+}
+
+.btn-gold {
+  color: #fff;
+  background-color: $gold;
+  padding: 3px 20px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  box-shadow: 1px 1px 2px #666;
+  transition: ease-out .25s;
+}
+
+.btn-gold:hover {
+  transition: ease .25s;
+  background-color: #8a7a45;
+}
+
+.btn-denim {
+  color: #fff;
+  background-color: $denim;
+  padding: 3px 20px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  box-shadow: 1px 1px 2px #666;
+  transition: ease-out .25s;
+}
+
+.btn-denim:hover {
+  transition: ease .25s;
+  background-color: #032754;
+}
+
+/* ======================
+1.1 FORMS
+====================== */
+
+#message_name, #message_email, #message_subject, #message_email, #message_content {
+  width: 100%;
+}
+
+.form-group {
+  background-color: $cloudy;
+  padding: 20px;
+  font-family: $sans;
+  font-size: 16px;
+  box-shadow: $shadow;
+  color: $denim;
+}
+
+.form-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 
@@ -147,7 +214,7 @@ p, li, span, blockquote {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: $cloudy;
   font-size: 16px;
   transition: ease-out .3s;
   margin: 0 25px;
@@ -170,24 +237,26 @@ p, li, span, blockquote {
     float:none;
     text-align:center;
   }
+
   #header-slogan {
     top: 10px;
   }
+
   #header-logo {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+  }
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
 }
 
 /* ======================
@@ -216,7 +285,7 @@ p, li, span, blockquote {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  text-shadow: 1px 4px 6px #000;
+  text-shadow: 1px 4px 6px #333;
 }
 
 #hero-description, #hero-header {
@@ -281,7 +350,7 @@ p, li, span, blockquote {
 }
 
 .practice-area-title {
-  color: #000;
+  color: #333;
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px){
@@ -311,7 +380,45 @@ p, li, span, blockquote {
 
   .practice-area-title {
     font-size: 16px;
-    color: black;
     margin: 5px 0 10px 0;
   }
+}
+
+/* ======================
+3.3 HOME - DUI PDF DOWNLOAD
+====================== */
+
+.dui-pdf-home {
+  margin: 0 auto;
+}
+
+/* ======================
+3.4 HOME - CONTACT HOME
+====================== */
+
+.contact-home {
+  margin: 0 auto;
+  color: #fff;
+}
+
+.contact-form {
+  margin: 20px 0;
+}
+
+/* ======================
+3.4 HOME - FOOTER
+====================== */
+
+footer {
+  background-color: #333;
+}
+
+footer * {
+  color: $cloudy;
+}
+
+.footer-location-map {
+}
+.contact-info {
+  float: right;
 }
