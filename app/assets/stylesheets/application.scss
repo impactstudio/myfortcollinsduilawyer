@@ -16,6 +16,7 @@
 MENU:
 !!! media queries included in each section (if applicable)
 1.0 DEFAULT / LAYOUT
+1.1 FORMS
 2.0 HEADER
 3.0 HOME - GENERAL
 3.1 HOME - HERO
@@ -41,6 +42,7 @@ $sand: #CBB054;
 $in: ease .3s;
 $out: ease-out .3s;
 $brushed-pattern: image-url("brushed-pattern.png");
+$shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
 
 body {
   background-color: #f9f9f9;
@@ -95,7 +97,64 @@ p, li, span, blockquote, dd, dt {
 
 strong {
   font-weight: bold;
+  color: $gold !important;
 }
+
+.btn-gold {
+  color: #fff;
+  background-color: $gold;
+  padding: 3px 20px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  box-shadow: 1px 1px 2px #666;
+  transition: ease-out .25s;
+}
+
+.btn-gold:hover {
+  transition: ease .25s;
+  background-color: #8a7a45;
+}
+
+.btn-denim {
+  color: #fff;
+  background-color: $denim;
+  padding: 3px 20px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  box-shadow: 1px 1px 2px #666;
+  transition: ease-out .25s;
+}
+
+.btn-denim:hover {
+  transition: ease .25s;
+  background-color: #032754;
+}
+
+/* ======================
+1.1 FORMS
+====================== */
+
+#message_name, #message_email, #message_subject, #message_email, #message_content {
+  width: 100%;
+}
+
+.form-group {
+  background-color: $cloudy;
+  padding: 20px;
+  font-family: $sans;
+  font-size: 16px;
+  box-shadow: $shadow;
+  color: $denim;
+}
+
+.form-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
 
 /* ======================
 2.0 HEADER
@@ -178,24 +237,26 @@ strong {
     float:none;
     text-align:center;
   }
+
   #header-slogan {
     top: 10px;
   }
+
   #header-logo {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+  }
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
 }
 
 /* ======================
@@ -339,7 +400,10 @@ strong {
 .contact-home {
   margin: 0 auto;
   color: #fff;
-  text-align: center;
+}
+
+.contact-form {
+  margin: 20px 0;
 }
 
 /* ======================

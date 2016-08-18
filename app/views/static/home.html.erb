@@ -33,13 +33,16 @@
   </div>
 </section>
 
-<!-- DUI PDF SECTION -->
+<!-- CONTACT SECTION SECTION -->
 <section class="denim-colored-container">
   <div class="container">
     <div class="row contact-home">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <div class="col-xs-12 col-sm-8">
         <h3>We're Here to Help You</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo, enim numquam autem, aliquam nobis quaerat vitae reprehenderit accusamus, eligendi ipsam ratione natus facere aperiam. Repellat eaque facilis atque quidem.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 contact-form">
+        <%= render partial: "messages/contact", locals: {message: Message.new}  %>
       </div>
     </div>
   </div>
