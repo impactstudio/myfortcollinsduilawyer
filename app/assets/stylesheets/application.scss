@@ -96,6 +96,8 @@ a:hover {
   float:right;
   margin: 10px 0;
   font-weight: bold;
+  position:relative;
+  top: 22px;
 }
 
 #header-tf-phone, #header-phone {
@@ -157,7 +159,9 @@ a:hover {
     float:none;
     text-align:center;
   }
-
+  #header-slogan {
+    top: 10px;
+  }
   #header-logo {
     margin-bottom: 20px;
   }
