@@ -258,37 +258,31 @@ p, li, span, blockquote {
   background-color: $sand;
 }
 
-.practice-container {
-  margin: 0 auto;
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.practice-box {
-  float: left;
-  border: 1px solid black;
-  background-color: $gold;
-  width: 45%px;
-  height: 300px;
-  margin: 20px 0;
-}
-
-.hammer {
-  display: block;
-  position: relative;
-  top: 10%;
-  margin: 0 auto;
-  width: 100px;
-}
-
-.practice-area-title {
+.practice-area {
+  background: $gold;
   text-align: center;
-  line-height: 80px;
+  height: 250px;
 }
 
-@media screen and (max-width: 1000px) {
-  .practice-box {}
+.practice-area > img {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+}
+
+@media screen and (max-width: 550px) {
+  .practice-area > img {
+    display: block;
+    margin: 7px auto;
+    width: 60px;
+  }
+
+  .practice-area {
+    height: 120px;
+  }
+
+  .practice-area-title {
+    font-size: 16px;
+  }
+
 }
