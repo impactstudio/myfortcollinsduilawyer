@@ -80,6 +80,8 @@ a:hover {
   transition: ease .3s;
 }
 
+
+
 /* ======================
 2.0 HEADER
 ====================== */
@@ -137,6 +139,7 @@ a:hover {
         text-align: center;
     }
 }
+
 /* ======================
 3.0 HOME - GENERAL
 ====================== */
@@ -146,11 +149,57 @@ a:hover {
 3.1 HOME - HERO
 ====================== */
 
+.hero {
+  width: 100%;
+  height: 200px;
+  background-color: $denim;
+}
 
 /* ======================
 3.2 HOME - WHAT ABOUT
 ====================== */
 
 /* ======================
-3.2 HOME - PROJECTS
+3.2 HOME - PRACTICE AREAS
 ====================== */
+
+.practice-areas {
+  padding: 50px;
+  width: 100%;
+  background-color: $sand;
+}
+
+.practice-container {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.practice-box {
+  float: left;
+  border: 1px solid black;
+  background-color: $gold;
+  width: 45%px;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.hammer {
+  display: block;
+  position: relative;
+  top: 10%;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.practice-area-title {
+  text-align: center;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .practice-box {}
+}
