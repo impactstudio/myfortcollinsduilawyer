@@ -127,6 +127,7 @@ p, li, span, blockquote {
 
 .navbar-default {
   background-color: $gold;
+  background-image: $brushed-pattern;
   border: none;
   transition: ease-out .3s;
 }
@@ -271,6 +272,7 @@ p, li, span, blockquote {
 .practice-area:hover {
   background-color: #827036;
   transition: $in;
+  cursor: pointer
 }
 
 .practice-area > img {
