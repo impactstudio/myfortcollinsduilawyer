@@ -15,7 +15,7 @@
 /*******************
 MENU:
 !!! media queries included in each section (if applicable)
-1.0 DEFAULT / LAYOUT
+1.0 DEFAULT / REUSABLE "OBJECTS"
 1.1 FORMS
 2.0 HEADER
 3.0 HOME - GENERAL
@@ -26,7 +26,7 @@ MENU:
 ********************/
 
 /* ======================
-1.0 DEFAULT / LAYOUT
+1.0 DEFAULT / REUSABLE "OBJECTS"
 ====================== */
 
 @import "bootstrap-sprockets";
@@ -42,7 +42,6 @@ $sand: #CBB054;
 $in: ease .3s;
 $out: ease-out .3s;
 $brushed-pattern: image-url("brushed-pattern.png");
-$shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
 
 body {
   background-color: #f9f9f9;
@@ -84,6 +83,7 @@ a:hover {
   color: $denim;
   text-decoration: none;
   transition: ease .3s;
+  cursor: pointer;
 }
 
 p, li, span, blockquote, dd, dt {
@@ -91,13 +91,17 @@ p, li, span, blockquote, dd, dt {
   font-weight: normal;
 }
 
-.denim-colored-container {
+.denim-colored-section {
   background-color: $denim;
 }
 
 strong {
   font-weight: bold;
   color: $gold !important;
+}
+
+.center-section {
+  margin: 0 auto;
 }
 
 .btn-gold {
@@ -130,20 +134,34 @@ strong {
   background-color: #032754;
 }
 
+.text-inversed {
+  color: $cloudy;
+}
+
+.shadow-box {
+  box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+}
+
+.taller-container {
+  margin: 30px 0;
+}
+
 /* ======================
 1.1 FORMS
 ====================== */
 
-#message_name, #message_email, #message_subject, #message_email, #message_content {
+#message_name, #message_email, #message_subject, #message_email, #message_message, #message_phone_number {
   width: 100%;
+  border: 2px solid $gold;
 }
 
 .form-group {
-  background-color: $cloudy;
+  background-color: $sand;
+  background-image: $brushed-pattern;
   padding: 20px;
+  border-radius: 2px;
   font-family: $sans;
   font-size: 16px;
-  box-shadow: $shadow;
   color: $denim;
 }
 
@@ -151,10 +169,8 @@ strong {
   text-align: center;
   font-weight: bold;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-
-
 
 /* ======================
 2.0 HEADER
@@ -182,11 +198,6 @@ strong {
   clear: right;
 }
 
-.navbar-right-spaced {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -205,25 +216,25 @@ strong {
 
 .navbar-toggle {
   background-color: $cloudy;
-  transition: ease-out .3s;
+  transition: $out;
 }
 
 .navbar-toggle:hover {
   background-color: $sand !important;
-  transition: ease .3s;
+  transition: $in;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: $cloudy;
   font-size: 16px;
-  transition: ease-out .3s;
+  transition: $out;
   margin: 0 25px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: $denim;
   text-decoration: none;
-  transition: ease .3s;
+  transition: $in;
 }
 
 @media screen and (max-width: 1250px) {
@@ -249,13 +260,13 @@ strong {
 
 @media (min-width: 768px) {
   .navbar .navbar-nav {
-      display: inline-block;
-      float: none;
-      vertical-align: top;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
   }
 
   .navbar .navbar-collapse {
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -279,7 +290,6 @@ strong {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  // background-position-y: 16px;
 }
 
 #hero-text {
@@ -289,14 +299,9 @@ strong {
   text-shadow: 1px 4px 6px #333;
 }
 
-#hero-description, #hero-header {
-  color: white;
-}
-
 #hero-header {
   font-size: 60px;
-  line-height: 70px;
-  margin-bottom: 20px;
+  line-height: 70px
 }
 
 #hero-description {
@@ -324,7 +329,7 @@ strong {
 .practice-areas {
   padding: 50px;
   width: 100%;
-  background-color: $sand;
+  background-color: $gold;
   background-image: $brushed-pattern;
 }
 
@@ -333,7 +338,6 @@ strong {
   background-image: $brushed-pattern;
   text-align: center;
   height: 250px;
-  box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
   border-radius: 2px;
   transition: $out;
 }
@@ -344,7 +348,7 @@ strong {
   cursor: pointer
 }
 
-.practice-area > img {
+.practice-area img {
   display: block;
   margin: 50px auto 0 auto;
   width: 200px;
@@ -358,18 +362,19 @@ strong {
   .practice-area {
     height: 130px;
   }
-  .practice-area > img {
+  .practice-area img {
     display: block;
     margin: 12px auto;
     width: 90%;
   }
   .practice-area-title {
     font-size: 16px;
+    margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .practice-area > img {
+  .practice-area img {
     display: block;
     margin: 12px auto;
     width: 90%;
@@ -389,16 +394,13 @@ strong {
 3.3 HOME - DUI PDF DOWNLOAD
 ====================== */
 
-.dui-pdf-home {
-  margin: 0 auto;
-}
+
 
 /* ======================
 3.4 HOME - CONTACT HOME
 ====================== */
 
 .contact-home {
-  margin: 0 auto;
   color: #fff;
 }
 
@@ -414,12 +416,6 @@ footer {
   background-color: #333;
 }
 
-footer * {
-  color: $cloudy;
-}
-
-.footer-location-map {
-}
 .contact-info {
   float: right;
 }

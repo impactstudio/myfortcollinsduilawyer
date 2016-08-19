@@ -1,26 +1,30 @@
 <!-- HERO -->
 <section class="hero">
   <div id="hero-text">
-    <h2 id="hero-header">DUI LAWYER for THE FUCKING WORLD!</h2>
-    <p id="hero-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ipsam libero, officiis perferendis sint id itaque, ea vitae laboriosam labore praesentium architecto. Est necessitatibus voluptas ut esse incidunt possimus quibusdam.</p>
+    <h2 id="hero-header" class="text-inversed">DUI LAWYER for THE FUCKING WORLD!</h2>
+    <p id="hero-description" class="text-inversed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ipsam libero, officiis perferendis sint id itaque, ea vitae laboriosam labore praesentium architecto. Est necessitatibus voluptas ut esse incidunt possimus quibusdam.</p>
   </div>
 </section>
 <!-- PRACTICE AREAS -->
 <section class="practice-areas container-fluid">
   <div class="row">
-    <div class="col-xs-5 col-md-4 col-md-offset-1 practice-area">
-      <%= image_tag('icon-dui-lawyer-fort-collins.png') %>
-      <h2 class="practice-area-title">DUI/DWAI</h2>
-    </div>
-    <div class="col-xs-5 col-xs-offset-2 col-md-4 col-md-offset-2 practice-area">
-      <%= image_tag('icon-criminal-justice-lawyer-fort-collins.png') %>
-      <h2 class="practice-area-title">Criminal Justice</h2>
-    </div>
+    <%= link_to(fort_collins_dui_lawyer_path) do %>
+      <div class="col-xs-5 col-md-4 col-md-offset-1 practice-area shadow-box">
+        <%= image_tag('icon-dui-lawyer-fort-collins.png') %>
+        <h2 class="practice-area-title">DUI/DWAI</h2>
+      </div>
+    <% end %>
+    <%= link_to(fort_collins_criminal_justice_lawyer_path) do %>
+      <div class="col-xs-5 col-xs-offset-2 col-md-4 col-md-offset-2 practice-area shadow-box">
+        <%= image_tag('icon-criminal-justice-lawyer-fort-collins.png') %>
+        <h2 class="practice-area-title">Criminal Justice</h2>
+      </div>
+    <% end %>
 </section>
 <!-- DUI PDF SECTION -->
 <section>
   <div class="container">
-    <div class="row dui-pdf-home">
+    <div class="row center-section taller-container">
       <div class="col-xs-12 col-sm-8">
         <h3>DUI Resources</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo, enim numquam autem, aliquam nobis quaerat vitae reprehenderit accusamus, eligendi ipsam ratione natus facere aperiam. Repellat eaque facilis atque quidem.</p>
@@ -34,14 +38,14 @@
 </section>
 
 <!-- CONTACT SECTION SECTION -->
-<section class="denim-colored-container">
+<section class="denim-colored-section">
   <div class="container">
-    <div class="row contact-home">
-      <div class="col-xs-12 col-sm-8">
+    <div class="row contact-home center-section taller-container">
+      <div class="col-xs-12 col-sm-7 col-md-8">
         <h3>We're Here to Help You</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo, enim numquam autem, aliquam nobis quaerat vitae reprehenderit accusamus, eligendi ipsam ratione natus facere aperiam. Repellat eaque facilis atque quidem.</p>
       </div>
-      <div class="col-xs-12 col-sm-4 contact-form">
+      <div class="col-xs-12 col-sm-5 col-md-4 contact-form">
         <%= render partial: "messages/contact", locals: {message: Message.new}  %>
       </div>
     </div>
