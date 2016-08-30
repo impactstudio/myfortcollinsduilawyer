@@ -17,7 +17,7 @@
 //= require_tree .
 
 $(function() {
-  $('.hero').animate({ height: '450px', opacity: '1'  }, 1000, 'linear');
+  $('.hero').animate({ height: '450px', opacity: '1'  }, { duration: 1200, easing: 'linear'});
 });
 
 $(document).ready(function(){
