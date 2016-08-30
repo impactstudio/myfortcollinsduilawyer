@@ -16,8 +16,9 @@
 //= require turbolinks
 //= require_tree .
 
-$(function() {
-  $('.hero').animate({ height: '450px', opacity: '1'  }, { duration: 1200, easing: 'linear'});
+$(document).ready(function() {
+  $(".hero").hide();
+  $(".hero").slideDown(1800);
 });
 
 $(document).ready(function(){
