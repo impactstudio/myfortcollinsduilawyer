@@ -128,6 +128,10 @@ strong {
   color: $gold !important;
 }
 
+section {
+
+}
+
 /* ======================
 1.2 REUSABLES
 ====================== */
@@ -442,9 +446,11 @@ strong {
 }
 
 /* ======================
-3.3 HOME - DUI PDF DOWNLOAD
+3.3 HOME - BIO SECTION
 ====================== */
-
+.bio {
+  background-color: #2b2521;
+}
 
 
 /* ======================
