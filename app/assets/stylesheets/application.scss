@@ -45,7 +45,7 @@ MENU:
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans:400,700';
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans:300,400,700';
 
 /* ======================
 1.0 VARIABLES
@@ -72,7 +72,7 @@ $brushed-pattern: image-url("brushed-pattern.png");
 body {
   background-color: #f9f9f9;
   margin: 0 auto;
-  font-size: 17px;
+  font: 300 17px "Open-Sans", Helvetica, sans-serif;
 }
 header {
   width: 100%;
@@ -100,6 +100,7 @@ h2 {
 h3 {
   line-height: 15px;
   font-size: 25px;
+  margin-bottom: 30px;
 }
 
 h3 span {
@@ -120,8 +121,7 @@ a:hover {
 
 p, li, span, blockquote, dd, dt {
   font-family: $sans;
-  font-weight: normal;
-  font-size: 1em;
+  font-weight: 300;
 }
 
 strong {
@@ -130,7 +130,7 @@ strong {
 }
 
 section {
-
+  padding: 20px 0 10px 0;
 }
 
 /* ======================
@@ -191,6 +191,7 @@ section {
 .section-headline {
   width: 100%;
   padding-bottom: 20px;
+  margin-top: 0;
   border-bottom: 1.5px solid;
   text-transform: uppercase;
 }
@@ -198,7 +199,7 @@ section {
 .lead {
   font-size: 1em;
   text-align: center;
-  padding: 0 15px 0 15px;
+  margin-bottom: 46px;
 }
 
 /* ======================
