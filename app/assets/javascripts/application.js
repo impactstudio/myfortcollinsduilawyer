@@ -16,12 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function() {
-  $(".hero").hide();
-  $(".hero").slideDown(1800);
-});
-
-$(document).ready(function(){
+function containerTransition() {
   $(window).scroll(function(){
     $(".taller-container").each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
@@ -32,4 +27,14 @@ $(document).ready(function(){
       }
     });
   });
+}
+
+function heroSlide() {
+  $(".hero").hide();
+  $(".hero").slideDown(1800);
+}
+
+$(document).ready(function() {
+  containerTransition();
+  heroSlide();
 });

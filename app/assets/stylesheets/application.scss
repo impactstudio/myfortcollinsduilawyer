@@ -491,3 +491,9 @@ footer {
 .awards-table td:last-child {
   padding-right: 0;
 }
+
+@media screen and (max-width: 709px) {
+  .awards {
+    display: none;
+  }
+}
