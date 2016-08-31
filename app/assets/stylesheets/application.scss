@@ -72,6 +72,7 @@ $brushed-pattern: image-url("brushed-pattern.png");
 body {
   background-color: #f9f9f9;
   margin: 0 auto;
+  font-size: 17px;
 }
 header {
   width: 100%;
@@ -120,7 +121,7 @@ a:hover {
 p, li, span, blockquote, dd, dt {
   font-family: $sans;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 strong {
@@ -192,6 +193,12 @@ section {
   padding-bottom: 20px;
   border-bottom: 1.5px solid;
   text-transform: uppercase;
+}
+
+.lead {
+  font-size: 1em;
+  text-align: center;
+  padding: 0 15px 0 15px;
 }
 
 /* ======================
