@@ -57,6 +57,7 @@ $cloudy: #f9f9f9;
 $gold: #aa9346;
 $denim: #053d84;
 $sand: #CBB054;
+$smokey: #333;
 $in: ease .3s;
 $out: ease-out .3s;
 $brushed-pattern: image-url("brushed-pattern.png");
@@ -98,7 +99,7 @@ h2 {
 
 h3 {
   line-height: 25px;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
@@ -125,7 +126,7 @@ p, li, span, blockquote, dd, dt {
 
 strong {
   font-weight: bold;
-  color: $gold !important;
+  color: $gold;
 }
 
 section {
@@ -358,7 +359,7 @@ section {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  text-shadow: 1px 4px 6px #333;
+  text-shadow: 1px 4px 6px $smokey;
 }
 
 #hero-header {
@@ -417,7 +418,7 @@ section {
 }
 
 .practice-area-title {
-  color: #333;
+  color: $smokey;
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px){
@@ -477,7 +478,18 @@ section {
 ====================== */
 
 footer {
-  background-color: #333;
+  background-color: $smokey;
+}
+
+#gmap_canvas {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 40px;
+  color: $smokey;
+}
+
+#gmap_canvas strong {
+  color: $smokey;
 }
 
 .contact-info {
