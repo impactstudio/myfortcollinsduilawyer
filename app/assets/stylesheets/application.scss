@@ -122,9 +122,36 @@ a:hover {
   cursor: pointer;
 }
 
-p, li, span, blockquote, dd, dt {
+p, li, span, dd, dt {
   font-family: $sans;
   font-weight: 300;
+}
+
+blockquote {
+  font-family: $crimson;
+  border-left: 8px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  margin: 50px 30px 30px 30px;
+  border-radius: 2px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.blockquote-name {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
 }
 
 strong {
@@ -173,7 +200,7 @@ section {
 }
 
 .button-sand:hover {
-  background-color: $wet-sand; 
+  background-color: $wet-sand;
 }
 
 .text-inversed {
@@ -486,6 +513,10 @@ section {
 
 .contact-form {
   margin: 20px 0;
+}
+
+.contact-text {
+  text-align: center;
 }
 
 .ebook-description, .book-image {
