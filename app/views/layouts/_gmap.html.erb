@@ -3,9 +3,9 @@
 <div style='overflow:hidden;'>
   <div id='gmap_canvas'></div>
   <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-</div> <a href='https://www.embedmap.net/'>google map widget for website</a>
+</div>
 
-<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=565d5ee7b00fc7a41cc7aa9e2c15050724cb90e4'>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=' + <%= ENV["GOOGLE_MAP_KEY"] %>>
 </script>
 
 <script type='text/javascript'>function init_map(){
