@@ -62,6 +62,7 @@ $smokey: #333;
 $in: ease .3s;
 $out: ease-out .3s;
 $brushed-pattern: image-url("brushed-pattern.png");
+$wet-sand: #827036;
 
 /* ======================
 1.1 GENERAL STYLING
@@ -166,8 +167,13 @@ section {
 }
 
 .button-sand {
+  margin-bottom: 0;
   background-color: $sand;
   color: #fff;
+}
+
+.button-sand:hover {
+  background-color: $wet-sand; 
 }
 
 .text-inversed {
@@ -411,7 +417,7 @@ section {
 }
 
 .practice-area:hover {
-  background-color: #827036;
+  background-color: $wet-sand;
   transition: $in;
   cursor: pointer
 }
@@ -502,8 +508,12 @@ section {
   width: 100%;
 }
 
-.ebook-form input[type="email"] {
+.form-denim input {
   width: 100%;
+  border-radius: 2px;
+  border: 2px solid;
+  padding: 2px;
+  font-family: $crimson;
 }
 
 /* ======================
