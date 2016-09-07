@@ -303,6 +303,9 @@ section {
   #header-slogan {
     font-size: 20px;
   }
+  h3 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -458,6 +461,10 @@ section {
 ====================== */
 .bio {
   background-color: #2b2521;
+}
+
+.bio h3 {
+  font-size: 25px;
 }
 
 
