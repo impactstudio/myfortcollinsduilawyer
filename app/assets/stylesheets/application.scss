@@ -147,21 +147,6 @@ section {
   margin: 0 auto;
 }
 
-.btn-gold {
-  color: #fff;
-  background-color: $gold;
-  padding: 3px 20px;
-  margin-top:9px;
-  margin-bottom: 9px;
-  box-shadow: 1px 1px 2px #666;
-  transition: ease-out .25s;
-}
-
-.btn-gold:hover {
-  transition: ease .25s;
-  background-color: #8a7a45;
-}
-
 .button {
   padding: 3px 20px;
   margin-top:9px;
@@ -221,12 +206,20 @@ section {
 }
 
 .form-group {
-  background-color: $sand;
-  background-image: $brushed-pattern;
   padding: 20px;
   border-radius: 2px;
   font-family: $sans;
   font-size: 16px;
+}
+
+.form-denim {
+  background-color: $denim;
+  color: $sand;
+}
+
+.form-sand {
+  background-image: $brushed-pattern;
+  background-color: $sand;
   color: $denim;
 }
 
