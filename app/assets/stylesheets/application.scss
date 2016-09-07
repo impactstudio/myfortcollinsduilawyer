@@ -32,7 +32,8 @@ MENU:
 --------------------------------
 - 3.1 HOME - HERO
 - 3.2 HOME - PRACTICE AREAS
-- 3.3 HOME - CONTACT
+- 3.3 HOME - BIO SECTION
+- 3.4 HOME - CONTACT
 
 --------------------------------
 4.0 FOOTER
@@ -80,6 +81,7 @@ header {
 
 h1, h2, h3 {
   font-family: $crimson;
+  margin-top: 0;
 }
 
 h1, h2 {
@@ -190,7 +192,6 @@ section {
 .section-headline {
   width: 100%;
   padding-bottom: 20px;
-  margin-top: 0;
   border-bottom: 1.5px solid;
   text-transform: uppercase;
 }
@@ -470,6 +471,14 @@ section {
 
 .contact-form {
   margin: 20px 0;
+}
+
+.book-image {
+  display: inline-block;
+}
+
+.ebook-description {
+  float: right;
 }
 
 /* ======================
