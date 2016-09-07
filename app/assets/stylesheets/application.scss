@@ -162,9 +162,7 @@ section {
   background-color: #8a7a45;
 }
 
-.btn-denim {
-  color: #fff;
-  background-color: $denim;
+.button {
   padding: 3px 20px;
   margin-top:9px;
   margin-bottom: 9px;
@@ -172,9 +170,19 @@ section {
   transition: ease-out .25s;
 }
 
-.btn-denim:hover {
+.button-denim {
+  color: #fff;
+  background-color: $denim;
+}
+
+.button-denim:hover {
   transition: ease .25s;
   background-color: #032754;
+}
+
+.button-sand {
+  background-color: $sand;
+  color: #fff;
 }
 
 .text-inversed {
@@ -494,6 +502,17 @@ section {
   width: 70%;
   margin-left: 3%;
 }
+
+.ebook-form {
+  background: $sand;
+  display: block;
+  width: 100%;
+}
+
+.ebook-form input[type="email"] {
+  width: 100%;
+}
+
 /* ======================
 3.4 HOME - FOOTER
 ====================== */
