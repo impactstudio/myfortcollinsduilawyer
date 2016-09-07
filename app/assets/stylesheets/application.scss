@@ -481,20 +481,26 @@ section {
   margin: 20px 0;
 }
 
-.book-image {
+.ebook-description, .book-image {
   display: inline-block;
+  vertical-align: top;
+}
+
+.book-image {
+  width: 25%;
 }
 
 .ebook-description {
-  float: right;
+  width: 70%;
+  margin-left: 3%;
 }
-
 /* ======================
 3.4 HOME - FOOTER
 ====================== */
 
 footer {
   background-color: $smokey;
+  padding: 30px 0;
 }
 
 #gmap_canvas {
