@@ -1,3 +1,19 @@
 <aside>
-  <%= image_tag "eric-sunness-dui-lawyer-help-book.png", class: "sidebar-image"%>
+  <%= image_tag "eric-sunness-dui-lawyer-help-book.png", class: "center-block sidebar-image"%>
+  <p class="center-text">Eric has written a book to help people with their DUI Defense. Enter your email address below to receive a FREE Copy.</p>
+  <%= render partial: "layouts/ebook_form" %>
+
+  <div class="eric-quote">
+    <%= image_tag "eric-sunness-dui-attorney-fort-collins.png", class: "center-block sidebar-image" %>
+    <p class="center-text">"The aggressive style of lawyering doesn't benefit anyone but the lawyer. I believe that people need a thorough lawyer, one who can articulate facts to the district attorney, the other side or the judge, and one who has a good understanding of what's reasonable."</p>
+    <p class="center-text">-- Eric A. Sunness, Attorney at Law</p>
+  </div>
+
+  <div class="student-discount center-text">
+    <%= image_tag "csu-icon" %>
+    <%= image_tag "unc-icon" %>
+    <p class="discount-text">Student Discounts Offered</p>
+  </div>
+
+  <%= render partial: "messages/contact", locals: {message: Message.new}  %>
 </aside>
