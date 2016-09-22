@@ -406,6 +406,14 @@ aside {
   width: 100%;
 }
 
+.sidebar-divider {
+  width: 95%;
+  border-top: none;
+  margin: 30px auto;
+  height: 3px;
+  background-color: $gold;
+}
+
 aside button[type="submit"] {
   display: block;
   margin: 10px auto;
@@ -415,21 +423,19 @@ aside .form-group {
   padding-bottom: 10px;
 }
 
-.eric-quote {
-  margin-top: 55px;
-}
-
 .student-discount img {
   margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .discount-text {
   font-weight: bold;
 }
 
-.student-discount {
-  margin-bottom: 50px;
+@media screen and (min-width: 500px) and (max-width: 768px){
+  .sidebar-image {
+    width: 60%;
+  }
 }
 
 /* ======================
@@ -755,4 +761,19 @@ footer h3 {
 
 .subpage-awards {
   position: absolute;
+}
+
+.subpage-hero {
+  width: 100%;
+  height: 350px;
+  background-image: image-url("dui-lawyer-fort-collins.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: table;
+}
+
+.subpage-hero-text {
+  display: table-cell;
+  vertical-align: middle;
 }
