@@ -33,7 +33,16 @@ function heroSlide(header) {
   $(header).slideDown(1800);
 }
 
+function onLoadContainerTransition(container) {
+  $(window).on("load", function(){
+    $(container).each( function(i){
+      $(this).animate({'opacity': '1'}, 700);
+    });
+  });
+}
+
 $(document).ready(function() {
-  containerTransition(".taller-container");
+  containerTransition(".onScrollContainerTransition");
+  onLoadContainerTransition(".onLoadContainerTransition");
   heroSlide(".hero");
 });
