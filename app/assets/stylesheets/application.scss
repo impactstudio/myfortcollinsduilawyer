@@ -395,7 +395,7 @@ section {
 
 #hero-text {
   text-align: center;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   text-shadow: 1px 4px 6px $smokey;
 }
@@ -403,23 +403,37 @@ section {
 #hero-header {
   font-size: 60px;
   line-height: 70px;
-  margin-bottom: 0;
 }
 
 #hero-description {
   font-size: 18px;
   line-height: 30px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 985px) {
   #hero-header {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 44px;
+    margin-bottom: 10px;
   }
-
   #hero-description {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  #hero-header {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 17px;
+  }
+  #hero-description {
+    font-size: 16px;
+    line-height: 25px;
+    width: 95%;
   }
 }
 
@@ -451,7 +465,7 @@ section {
 
 .practice-area img {
   display: block;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 20px auto;
   width: 200px;
 }
 
@@ -465,12 +479,12 @@ section {
   }
   .practice-area img {
     display: block;
-    margin: 12px auto;
+    margin: 12px auto 5px auto;
     width: 90%;
   }
   .practice-area-title {
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -486,7 +500,7 @@ section {
   }
 
   .practice-area-title {
-    font-size: 16px;
+    font-size: 15px;
     margin: 5px 0 10px 0;
   }
 }
@@ -525,7 +539,7 @@ section {
 }
 
 .book-image {
-  width: 25%;
+  width: 26%;
 }
 
 .ebook-description {
