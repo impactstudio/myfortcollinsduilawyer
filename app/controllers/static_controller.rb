@@ -16,4 +16,7 @@ class StaticController < ApplicationController
 
   def fort_collins_criminal_defense_lawyer
   end
+
+  def case_results
+  end
 end

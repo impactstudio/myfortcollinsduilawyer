@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/fort-collins-criminal-defense-lawyer',
       to: 'static#fort_collins_criminal_defense_lawyer'
   get '/thank_you', to: 'static#thank_you'
+  get '/case-results', to: 'static#case_results'
 end
