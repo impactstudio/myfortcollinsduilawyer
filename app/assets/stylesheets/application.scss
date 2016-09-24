@@ -735,11 +735,11 @@ footer h3 {
   position: absolute;
   opacity: 0;
   left: 0;
-  text-align: center;
+  text-align: left;
   list-style: none;
   font-size: 1em;
   font-family: $crimson;
-  width: 100%;
+  width: 90%;
   height: 250px;
   padding: 0 15px 15px 0;
   font-weight: 300;
@@ -764,6 +764,15 @@ footer h3 {
   .content-slider-widget {
     padding-left: 15px;
     height: 250px;
+  }
+  .slide {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content-slider-widget {
+    height: 323px;
   }
 }
 
