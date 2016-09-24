@@ -1,2 +1,3 @@
-  <li class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, reiciendis, fugit! Dolorum numquam eveniet repellendus quas adipisci officiis consectetur, amet voluptate omnis debitis, iure maxime dolores ut sit odio facere! in soluta dicta, cupiditate temporibus voluptas illo? Suscipit quos, ipsa optio dicta vel. Quibusdam, molestiae, sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe atque, pariatur, nihil nam</li>
-  <li class="slide">in soluta dicta, cupiditate temporibus voluptas illo? Suscipit quos, ipsa optio dicta vel. Quibusdam, molestiae, sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe atque, pariatur, nihil nam in soluta dicta, cupiditate temporibus voluptas illo? Suscipit quos, ipsa optio dicta vel. Quibusdam, molestiae, sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe atque, pariatur, nihil nam</li>
+<% CaseResult.all.each do |case_result| %>
+  <li class="slide"><%= case_result.result %></li>
+<% end %>
