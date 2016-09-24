@@ -1,4 +1,6 @@
 class StaticController < ApplicationController
+  before_action :set_case_results
+
   def home
   end
 
@@ -18,5 +20,11 @@ class StaticController < ApplicationController
   end
 
   def case_results
+  end
+
+  private
+
+  def set_case_results
+    @case_results = CaseResult.all
   end
 end

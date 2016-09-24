@@ -10,7 +10,9 @@
     <div class="row taller-container">
       <div class="col-md-8">
         <ol>
-          <%= render partial: "case_results_section" %>
+          <% @case_results.each do |case_result| %>
+            <li><%= case_result.result %></li>
+          <% end %>
         </ol>
         <h3 class="subpage-subheading">Free Initial Consultation</h3>
 
