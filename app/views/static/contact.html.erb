@@ -1,3 +1,28 @@
+<div class="onLoadContainerTransition">
+<div class="container-fluid subpage-hero dui-lawyer case-results">
+  <div id="hero-text" class="subpage-hero-text">
+    <h1 id="hero-header" class="text-inversed">Contact Our DWI, Criminal Defense And Family Law Lawyers Now</h1>
+  </div>
+</div>
 <div class="container">
-  <%= render partial: "messages/contact", locals: {message: Message.new}  %>  
+
+    <div class="container sub-page-content">
+      <div class="row taller-container">
+        <div class="col-md-8">
+          <p>Since 1993, the office of attorney Eric A. Sunness, Attorney at Law, LLC, has provided thorough, proficient legal representation in Colorado, focusing on the practice areas of DUI/DWAI, criminal defense and family law.</p>
+
+          <p>Our firm's approach to representing our clients is characterized by straightforward advice and realistic goal setting.</p>
+
+          <p>If you have legal questions, you can contact us by calling 970-372-2036 or toll free 888-830-9445. Or, contact our lawyers via email by filling out and submitting the form below.
+
+          Our office is wheelchair-accessible and conveniently located in the heart of Old Town Fort Collins, near the Justice Center at the intersection of College Avenue and East Oak Street.</p>
+          <%= render partial: "messages/contact", locals: {message: Message.new}  %>
+          <p><span class="disclaimer">*Disclaimer</span> The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship. Confidential or time-sensitive information should not be sent through this form.</p>
+        </div>
+        <div class="col-md-4">
+          <%= render partial: "layouts/sidebar" %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

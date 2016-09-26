@@ -9,4 +9,5 @@ Rails.application.routes.draw do
       to: 'static#fort_collins_criminal_defense_lawyer'
   get '/thank_you', to: 'static#thank_you'
   get '/case-results', to: 'static#case_results'
+  get '/privacy-policy', to: 'static#privacy_policy'
 end

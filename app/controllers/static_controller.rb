@@ -22,6 +22,9 @@ class StaticController < ApplicationController
   def case_results
   end
 
+  def privacy_policy
+  end
+
   private
 
   def set_case_results

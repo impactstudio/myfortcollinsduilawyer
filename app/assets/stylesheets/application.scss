@@ -43,6 +43,7 @@ MENU:
 5.0 SUBPAGE
 --------------------------------
 - 5.1 SUBPAGE
+- 5.2 CONTACT PAGE
 ********************/
 
 /* ======================
@@ -848,4 +849,22 @@ footer h3 {
 .subpage-subheading {
   margin-top: 50px;
   line-height: 30px;
+}
+
+/* ======================
+5.2 CONTACT PAGE
+====================== */
+
+.contact-page-form {
+  width: 100%;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+.disclaimer {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
 }
