@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :duis
+  resources :duis, only: [:show]
   resources :messages, only: [:create]
 
   root 'static#home'
