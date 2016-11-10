@@ -13,6 +13,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require tinymce
 //= require_tree .
 
 function SliderWidget(slideElm, styleClass, button, intervalSpeed){
