@@ -7,7 +7,7 @@ class DuisController < ApplicationController
   end
 
   def new
-    @dui = Deu.new
+    @dui = Dui.new
   end
 
   def create
