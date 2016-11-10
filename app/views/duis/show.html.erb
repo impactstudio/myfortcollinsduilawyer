@@ -1,3 +1,22 @@
-<h1><%= @dui.title %></h1>
+<div class="onLoadContainerTransition">
+  <div class="container-fluid subpage-hero dui-lawyer">
+    <div id="hero-text" class="subpage-hero-text">
+      <h1 id="hero-header" class="text-inversed">Your Fort Collins Dui Lawyer</h1>
+      <p id="hero-description" class="text-inversed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ipsam libero, officiis perferendis sint id itaque, ea vitae laboriosam labore praesentium architecto. Est necessitatibus voluptas ut esse incidunt possimus quibusdam.</p>
+    </div>
+  </div>
 
-<%= @dui.content %>
+  <div class="container sub-page-content">
+    <div class="row taller-container">
+      <div class="col-md-8">
+        <h2><%= @dui.title %></h2>
+
+        <%= sanitize @dui.content %>
+      </div>
+      <div class="col-md-4">
+        <%= render partial: "layouts/sidebar" %>
+      </div>
+    </div>
+  </div>
+  <%= render partial: "static/contact_section"  %>
+</div>
