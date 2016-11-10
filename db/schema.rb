@@ -11,13 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161109213211) do
+ActiveRecord::Schema.define(version: 20161110040910) do
 
   create_table "case_results", force: :cascade do |t|
     t.text     "result"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "criminal_defenses", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "criminal_defenses", ["slug"], name: "index_criminal_defenses_on_slug", unique: true
 
   create_table "duis", force: :cascade do |t|
     t.string   "title"
