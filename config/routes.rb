@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :messages, only: [:create]
-  resources :duis
+  resources :duis, path: "fort-collins-dui-lawyer", only: [:show, :edit, :update, :new, :create]
 
   root 'static#home'
   get '/about', to: 'static#about'
