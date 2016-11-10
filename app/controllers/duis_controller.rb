@@ -23,6 +23,9 @@ class DuisController < ApplicationController
   end
 
   def update
+    @dui.update(dui_params)
+    @dui.save
+    redirect_to @dui
   end
 
   private
