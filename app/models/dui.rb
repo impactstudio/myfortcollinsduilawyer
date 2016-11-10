@@ -1,4 +1,4 @@
 class Dui < ActiveRecord::Base
   extend FriendlyId
-  friendly_id :title
+  friendly_id :title, use: :slugged
 end

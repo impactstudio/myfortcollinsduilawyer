@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :duis, only: [:show]
   resources :messages, only: [:create]
 
   root 'static#home'
+  get "/fort-collins-dui-lawyer/:id", to: 'duis#show'
   get '/about', to: 'static#about'
   get '/contact', to: 'static#contact'
   get '/fort-collins-dui-lawyer', to: 'static#fort_collins_dui_lawyer'

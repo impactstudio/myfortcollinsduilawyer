@@ -1,6 +1,4 @@
 class StaticController < ApplicationController
-  before_action :set_case_results
-
   def home
   end
 
@@ -23,11 +21,5 @@ class StaticController < ApplicationController
   end
 
   def privacy_policy
-  end
-
-  private
-
-  def set_case_results
-    @case_results = CaseResult.all
   end
 end
