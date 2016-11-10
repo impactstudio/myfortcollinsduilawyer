@@ -1,7 +1,8 @@
 toolbar:
-  - styleselect | bold italic | undo redo
+  - insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image
   - image | link
 plugins:
   - image
   - link
+  - advlist
   - wordcount
