@@ -30,7 +30,7 @@ class CriminalDefensesController < ApplicationController
 
   private
 
-  def set_dui
+  def set_criminal_defense
     @criminal_defense = CriminalDefense.friendly.find(params[:id])
   end
 
