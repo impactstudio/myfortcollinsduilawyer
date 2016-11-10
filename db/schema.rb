@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161110040910) do
+ActiveRecord::Schema.define(version: 20161110162738) do
 
   create_table "case_results", force: :cascade do |t|
     t.text     "result"
@@ -23,8 +23,10 @@ ActiveRecord::Schema.define(version: 20161110040910) do
     t.string   "title"
     t.text     "content"
     t.string   "slug"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "description"
+    t.string   "keywords"
   end
 
   add_index "criminal_defenses", ["slug"], name: "index_criminal_defenses_on_slug", unique: true
@@ -33,8 +35,10 @@ ActiveRecord::Schema.define(version: 20161110040910) do
     t.string   "title"
     t.text     "content"
     t.string   "slug"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "description"
+    t.string   "keywords"
   end
 
   add_index "duis", ["slug"], name: "index_duis_on_slug", unique: true
