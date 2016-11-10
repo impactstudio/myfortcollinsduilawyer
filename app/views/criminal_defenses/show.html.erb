@@ -1,3 +1,22 @@
-<h1><%= @criminal_defense.title %></h1>
+<div class="onLoadContainerTransition">
+  <div class="container-fluid subpage-hero criminal-defense-lawyer">
+    <div id="hero-text" class="subpage-hero-text">
+      <h1 id="hero-header" class="text-inversed">Your Fort Collins Criminal Defense Lawyer</h1>
+      <p id="hero-description" class="text-inversed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ipsam libero, officiis perferendis sint id itaque, ea vitae laboriosam labore praesentium architecto. Est necessitatibus voluptas ut esse incidunt possimus quibusdam.</p>
+    </div>
+  </div>
 
-<%= sanitize(@criminal_defense.content) %>
+  <div class="container sub-page-content">
+    <div class="row taller-container">
+      <div class="col-md-8">
+        <h2><%= @criminal_defense.title %></h2>
+
+        <%= sanitize @criminal_defense.content %>
+      </div>
+      <div class="col-md-4">
+        <%= render partial: "layouts/sidebar" %>
+      </div>
+    </div>
+  </div>
+  <%= render partial: "static/contact_section"  %>
+</div>
