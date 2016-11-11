@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, path_names: {
+    sign_up: ""
+  }
   resources :messages, only: [:create]
   resources :duis, path: "fort-collins-dui-lawyer", only: [:show, :edit, :update, :new, :create]
   resources :criminal_defenses, path: "fort-collins-criminal-defense-lawyer", only: [:show, :edit, :update, :new, :create]
