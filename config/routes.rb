@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/about', to: 'static#about'
   get '/contact', to: 'static#contact'
   get '/dui', to: 'duis#index'
+  get '/criminal-defense', to: 'criminal_defenses#index'
   get '/fort-collins-dui-lawyer', to: 'static#fort_collins_dui_lawyer'
   get '/fort-collins-criminal-defense-lawyer',
       to: 'static#fort_collins_criminal_defense_lawyer'
