@@ -1,5 +1,16 @@
-<ul>
-  <% @duis.each do |dui| %>
-    <li><%= link_to dui.title, dui %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h2>DUI Subpage Directory</h2>
+
+  <p>Here you can create a new dui subpage!</p>
+  <%= link_to "New DUI Subpage", new_dui_path %>
+
+  <hr>
+
+  <h3>List of Current Sub Pages</h3>
+
+  <ul>
+    <% @duis.each do |dui| %>
+      <li><%= link_to dui.title, dui %> - <%= link_to "Edit", edit_dui_path(dui) %> - <%= link_to 'Destroy', { action: :destroy, id: dui.id }, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    <% end %>
+  </ul>
+</div>

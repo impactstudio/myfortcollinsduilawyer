@@ -1,5 +1,5 @@
 class DuisController < ApplicationController
-  before_action :set_dui, only: [:show, :edit, :update]
+  before_action :set_dui, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:edit, :create, :update, :new]
 
   def index
@@ -31,6 +31,11 @@ class DuisController < ApplicationController
     @dui.update(dui_params)
     @dui.save
     redirect_to @dui
+  end
+
+  def destroy
+    @dui.destroy
+    redirect_to duis_path
   end
 
   private

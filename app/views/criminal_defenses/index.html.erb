@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Criminal Defense Subpage Directory</h2>
+
+  <p>Here you can create a new criminal defense subpage!</p>
+  <%= link_to "New Criminal Defense Subpage", new_criminal_defense_path %>
+
+  <hr>
+
+  <h3>List of Current Sub Pages</h3>
+
+  <ul>
+    <% @criminal_defenses.each do |criminal_defense| %>
+      <li><%= link_to criminal_defense.title, criminal_defense %> - <%= link_to "Edit", edit_criminal_defense_path(criminal_defense) %> - <%= link_to 'Destroy', { action: :destroy, id: criminal_defense.id }, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    <% end %>
+  </ul>
+</div>
