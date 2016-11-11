@@ -25,6 +25,9 @@
           <li><%= link_to "Criminal Defense", fort_collins_criminal_defense_lawyer_path %></li>
           <li><%= link_to "Case Results", case_results_path %></li>
           <li><%= link_to "Contact", contact_path %></li>
+          <% if current_user %>
+            <li><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li>
+          <% end %>
         </ul>
       </div><!-- /.navbar-collapse -->
     </nav>

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'devise'
 gem 'tinymce-rails'
 gem 'meta-tags'
 gem 'friendly_id', '~> 5.1.0'

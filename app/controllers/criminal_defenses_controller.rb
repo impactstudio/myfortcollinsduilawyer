@@ -1,5 +1,6 @@
 class CriminalDefensesController < ApplicationController
   before_action :set_criminal_defense, only: [:show, :edit, :update]
+  before_action :authenticate_user!, only: [:edit, :create, :update, :new]
 
   def show
     set_meta_tags title: "Fort Collins Criminal Defense Lawyer | #{@criminal_defense.title}",

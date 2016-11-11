@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :messages, only: [:create]
   resources :duis, path: "fort-collins-dui-lawyer", only: [:show, :edit, :update, :new, :create]
   resources :criminal_defenses, path: "fort-collins-criminal-defense-lawyer", only: [:show, :edit, :update, :new, :create]
