@@ -1,6 +1,6 @@
 class DuisController < ApplicationController
   before_action :set_dui, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:edit, :create, :update, :new]
+  before_action :authenticate_user!, only: [:edit, :create, :update, :new, :index]
 
   def index
     @duis = Dui.all

@@ -1,6 +1,6 @@
 class CriminalDefensesController < ApplicationController
   before_action :set_criminal_defense, only: [:show, :edit, :update]
-  before_action :authenticate_user!, only: [:edit, :create, :update, :new]
+  before_action :authenticate_user!, only: [:edit, :create, :update, :new, :index]
 
   def index
     @criminal_defenses = CriminalDefense.all
