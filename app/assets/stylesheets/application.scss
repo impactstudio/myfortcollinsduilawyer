@@ -248,6 +248,14 @@ section {
   opacity: 0;
 }
 
+.white-links {
+  color: white;
+}
+
+.white-links:hover {
+  color: $gold;
+}
+
 /* ======================
 1.3 FORMS
 ====================== */

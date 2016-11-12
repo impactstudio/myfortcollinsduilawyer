@@ -16,10 +16,12 @@ class StaticController < ApplicationController
 
   def fort_collins_dui_lawyer
     set_meta_tags title: "Fort Collins DUI Lawyer"
+    @duis = Dui.all
   end
 
   def fort_collins_criminal_defense_lawyer
     set_meta_tags title: "Fort Collins Criminal Defense Lawyer"
+    @criminal_defenses = CriminalDefense.all
   end
 
   def case_results

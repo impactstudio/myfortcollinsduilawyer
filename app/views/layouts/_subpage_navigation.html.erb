@@ -4,11 +4,9 @@
     <div class="col-xs-12 subpages">
       <h3 class="subpage-subheading sub-practice-area-nav">Additional Resources</h3>
       <ul class="sub-practice-area-links">
-        <li>Blah</li>
-        <li>Blah</li>
-        <li>Blah</li>
-        <li>Blah</li>
-        <li>Blah</li>
+        <% subpages.each do |subpage| %>
+          <li><%= link_to subpage.title.titleize, subpage, class: "white-links" %></li>
+        <% end %>
       </ul>
     </div>
   </div>

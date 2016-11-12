@@ -42,7 +42,7 @@
 
         <p>For a free consultation, call <a href="tel:+1-970-372-2036">970-372-2036</a> or <%= link_to "Contact", contact_path %> me directly at my firm, Eric A. Sunness, Attorney at law, LLC.</p>
 
-        <%= render partial: "layouts/subpage_navigation" %>
+        <%= render partial: "layouts/subpage_navigation", locals: {subpages: @duis} %>
       </div>
       <div class="col-md-4">
         <%= render partial: "layouts/sidebar" %>
