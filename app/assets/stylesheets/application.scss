@@ -53,6 +53,7 @@ MENU:
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans:300,400,700';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 
 /* ======================
 1.0 VARIABLES
@@ -545,6 +546,50 @@ aside .form-group {
 
 .practice-area-title {
   color: $smokey;
+}
+
+.sub-practice-area-nav {
+  background-color: $gold;
+  color: $denim;
+  margin: 0 !important;
+  border-bottom: 3px solid $cloudy;
+}
+
+.subpages {
+  padding: 0;
+  border-radius: 2px;
+}
+
+.sub-practice-area-nav, .sub-practice-area-links {
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.sub-practice-area-nav {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.sub-practice-area-links {
+  list-style: none;
+  background-color: $denim;
+  color: $cloudy;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.sub-practice-area-links li {
+  display: inline-block;
+  font-family: $crimson;
+  padding: 5px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.sub-practice-area-links li:after {
+  font-family: "FontAwesome";
+  content: " //";
+  padding-left: 7px;
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px){
