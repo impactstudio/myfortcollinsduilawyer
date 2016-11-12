@@ -81,6 +81,10 @@ function onLoadContainerTransition(container) {
   });
 }
 
+function showDropdownOnHover() {
+
+}
+
 $(document).ready(function() {
   containerTransition(".onScrollContainerTransition");
   onLoadContainerTransition(".onLoadContainerTransition");
