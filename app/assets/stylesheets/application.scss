@@ -468,19 +468,22 @@ aside .form-group {
   justify-content: center;
   width: 100%;
   height: 450px;
-  background-color: $gold;
-  background-image: image-url("placeholder.jpg");
+  background:
+  linear-gradient(
+      rgba(0, 0, 0, .3),
+      rgba(0, 0, 0, .3)
+    ),
+  url(placeholder.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: .9;
+  opacity: .95;
 }
 
 #hero-text {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  text-shadow: 1px 4px 6px $smokey;
 }
 
 #hero-header {
