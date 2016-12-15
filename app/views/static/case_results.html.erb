@@ -9,9 +9,9 @@
   <div class="container sub-page-content">
     <div class="row taller-container">
       <div class="col-md-8">
-        <ol>
+        <ol class="case-results-list">
           <% @case_results.each do |case_result| %>
-            <li><%= case_result.result %></li>
+            <li class="case-result"><span class="case-result-description"><%= case_result.result %></span></li>
           <% end %>
         </ol>
         <h3 class="subpage-subheading">Free Initial Consultation</h3>
