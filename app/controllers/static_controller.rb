@@ -3,8 +3,8 @@ class StaticController < ApplicationController
     set_meta_tags title: "Your Fort Collins DUI and Criminal Defense Lawyer"
   end
 
-  def about
-    set_meta_tags title: "About"
+  def firm_overview
+    set_meta_tags title: "Firm Overview"
   end
 
   def contact

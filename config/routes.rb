@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :criminal_defenses, path: "fort-collins-criminal-defense-lawyer", only: [:show, :edit, :update, :new, :create, :destroy]
 
   root 'static#home'
-  get '/about', to: 'static#about'
+  get '/firm-overview', to: 'static#firm_overview'
   get '/contact', to: 'static#contact'
   get '/dui', to: 'duis#index'
   get '/criminal-defense', to: 'criminal_defenses#index'
