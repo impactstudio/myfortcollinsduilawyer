@@ -239,7 +239,7 @@ section {
 }
 
 .lead {
-  font-size: 1em;
+  font-size: 1.1em;
   text-align: center;
   margin-bottom: 46px;
 }
@@ -750,27 +750,22 @@ aside .form-group {
 /* ======================
 3.4 HOME - CONTACT HOME
 ====================== */
-
 .contact-home {
   color: #fff;
 }
-
 /* ======================
 3.4 HOME - FOOTER
 ====================== */
-
 footer {
   background-color: $smokey;
   padding-top: 30px;
 }
-
 #gmap_canvas {
   height: 250px;
   width: 100%;
   margin-bottom: 40px;
   color: $smokey;
 }
-
 #gmap_canvas strong {
   color: $smokey;
 }
