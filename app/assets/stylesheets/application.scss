@@ -139,6 +139,10 @@ p, li, span, dd, dt {
   font-weight: 300;
 }
 
+p {
+  text-align: justify;
+}
+
 blockquote {
   font-family: $crimson;
   border-left: 8px solid #ddd;
@@ -493,17 +497,21 @@ aside .form-group {
 }
 
 #hero-header {
-  font-size: 60px;
+  font-size: 59px;
   line-height: 70px;
   margin-bottom: 0;
 }
 
 #hero-description {
-  font-size: 18px;
+  font-family: $crimson;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 2px;
   line-height: 30px;
   width: 80%;
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 985px) {
