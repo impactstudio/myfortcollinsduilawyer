@@ -84,8 +84,9 @@ body {
   margin: 0 auto;
   font: 300 17px "Open-Sans", Helvetica, sans-serif;
 }
-header {
-  width: 100%;
+
+.bg-paper, body, .awards {
+  background: image-url('bg-black-paper.png');
 }
 
 h1, h2, h3 {
@@ -127,6 +128,10 @@ a:hover {
   text-decoration: none;
   transition: ease .3s;
   cursor: pointer;
+}
+
+hr {
+  border-top: 1px solid #333;
 }
 
 p, li, span, dd, dt {
@@ -865,7 +870,6 @@ footer h3 {
 ====================== */
 
 .awards {
-  background: #f9f9f9;
   width: 100%;
 }
 
