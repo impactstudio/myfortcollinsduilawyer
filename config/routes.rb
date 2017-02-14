@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   root 'static#home'
   get '/firm-overview', to: 'static#firm_overview'
+  get '/eric-a-sunness', to: 'static#eric_sunness'
   get '/contact', to: 'static#contact'
   get '/dui', to: 'duis#index'
   get '/criminal-defense', to: 'criminal_defenses#index'

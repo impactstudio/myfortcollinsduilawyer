@@ -7,6 +7,9 @@ class StaticController < ApplicationController
     set_meta_tags title: "Firm Overview"
   end
 
+  def eric_sunness
+  end
+
   def contact
     set_meta_tags title: "Contact"
   end

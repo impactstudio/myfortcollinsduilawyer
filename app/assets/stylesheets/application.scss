@@ -143,6 +143,14 @@ p {
   text-align: justify;
 }
 
+.strong-paragraph {
+  font-weight: 500;
+}
+
+.main-blockquote {
+  margin-top: 35px;
+}
+
 blockquote {
   font-family: $crimson;
   border-left: 8px solid #ddd;
