@@ -276,6 +276,10 @@ section {
 /* ======================
 1.3 FORMS
 ====================== */
+textarea {
+  height: 150px;
+  resize: none;
+}
 
 #message_name, #message_email, #message_subject, #message_email, #message_message, #message_phone_number {
   width: 100%;
@@ -395,6 +399,10 @@ section {
 }
 
 @media screen and (max-width: 1070px) {
+  .navbar-default .navbar-nav > li > a {
+    margin: 0 10px;
+  }
+
   #header-logo, #header-slogan, #header-fax-phone, #header-phone {
     float:none;
     text-align:center;
@@ -406,6 +414,12 @@ section {
 
   #header-logo {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .navbar-default .navbar-nav > li > a {
+    margin: auto 0;  
   }
 }
 
@@ -889,7 +903,7 @@ footer h3 {
   #header-slogan {
     line-height: 26px;
   }
-  
+
   #header-logo img {
     width: 100%;
     height: auto;
