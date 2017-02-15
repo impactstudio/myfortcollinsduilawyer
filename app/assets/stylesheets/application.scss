@@ -885,6 +885,36 @@ footer h3 {
   }
 }
 
+@media screen and (max-width: 375px) {
+  #header-slogan {
+    line-height: 26px;
+  }
+  
+  #header-logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  #hero-header {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  #hero-description {
+    line-height: 22px;
+  }
+
+  .practice-area-title {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .practice-area-title {
+    font-size: 10px;
+  }
+}
+
 /* ======================
 4.0 AWARDS
 ====================== */
