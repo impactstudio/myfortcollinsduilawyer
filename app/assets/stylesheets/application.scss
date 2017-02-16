@@ -751,12 +751,18 @@ aside .form-group {
 }
 
 @media screen and (min-width: 535px) and (max-width: 709px){
+  .lead {
+    text-align: justify;
+  }
+
   .secondary-bio {
     margin-bottom: 46px;
   }
+
   .book-image {
     width: 28%;
   }
+  
   .ebook-description {
     width: 68%;
     margin-left: 3%;
