@@ -6,8 +6,7 @@ $contactForm.submit(function(e) {
 	var defaultSubmitText = $submit.val();
   // var email = "<%= ENV['CONTACT_EMAIL'] %>";
 	var email = 'sam.ringleman@gmail.com';
-
-
+	var form = $(this);
 
 	$.ajax({
 		url: '//formspree.io/' + email,
@@ -23,19 +22,20 @@ $contactForm.submit(function(e) {
 			$submit.val('Message sent!');
 			setTimeout(function() {
 				//$('.alert--success').remove();
+				debugger;
 				$submit.attr('disabled', false).val(defaultSubmitText);
 				$(".contact-form")[0].reset();
-				if (window.location.href.includes('/contact')) {
-					window.location.href = "/thank_you";
-				} else {
+				if (form[0].id.includes("ebook-form")) {
 					window.open('/Eric-Sunness-DUI-Ebook.pdf', '_blank');
+				} else {
+					window.location.href = "/thank_you";
 				}
 			}, 5000);
 		},
 		error: function(err) {
 			//$contactForm.find('.alert--loading').hide();
 			//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-			$submit.val('Ops, there was an error.');
+			$submit.val('Oops, there was an error.');
 			setTimeout(function() {
 				//$('.alert--error').remove();
 				$submit.attr('disabled', false).val(defaultSubmitText);
