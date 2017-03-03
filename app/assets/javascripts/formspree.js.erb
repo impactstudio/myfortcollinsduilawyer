@@ -21,7 +21,6 @@ $contactForm.submit(function(e) {
 			$submit.val('Message sent!');
 			setTimeout(function() {
 				//$('.alert--success').remove();
-				debugger;
 				$submit.attr('disabled', false).val(defaultSubmitText);
 				$(".contact-form")[0].reset();
 				if (form[0].id.includes("ebook-form")) {
