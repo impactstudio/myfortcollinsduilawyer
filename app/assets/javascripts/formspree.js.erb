@@ -5,6 +5,7 @@ $contactForm.submit(function(e) {
 	var $submit = $('input:submit', $contactForm);
 	var defaultSubmitText = $submit.val();
   // var email = "<%= ENV['CONTACT_EMAIL'] %>";
+	var email = 'sam.ringleman@gmail.com';
 
 
 
@@ -24,6 +25,11 @@ $contactForm.submit(function(e) {
 				//$('.alert--success').remove();
 				$submit.attr('disabled', false).val(defaultSubmitText);
 				$(".contact-form")[0].reset();
+				if (window.location.href.includes('/contact')) {
+					window.location.href = "/thank_you";
+				} else {
+					window.open('/Eric-Sunness-DUI-Ebook.pdf', '_blank');
+				}
 			}, 5000);
 		},
 		error: function(err) {

@@ -227,6 +227,14 @@ section {
   background-color: $wet-sand;
 }
 
+.button.pdf-button {
+  width: auto;
+  padding: 0px 20px;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+}
+
 .text-inversed {
   color: $cloudy;
 }
