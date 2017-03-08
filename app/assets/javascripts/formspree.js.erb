@@ -4,7 +4,7 @@ $contactForm.submit(function(e) {
 	e.preventDefault();
 	var $submit = $('input:submit', $contactForm);
 	var defaultSubmitText = $submit.val();
-  var email = "<%= ENV['CONTACT_EMAIL'] %>";
+  var email = "<%= ENV['CONTACT_EMAIL'] %>";ß
 	var form = $(this);
 
 	$.ajax({
