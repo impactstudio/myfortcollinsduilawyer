@@ -14,10 +14,12 @@
 
         <div class="col-xs-12 col-md-6 ebook-section">
           <%= image_tag 'eric-sunness-dui-lawyer-help-book.png', class: "book-image" %>
-          <div class="ebook-description">
-            <p>Eric has written a book to help people with their DUI Defense. <strong>Enter your email address below to receive a FREE Copy.</strong></p>
 
-            <%= render partial: "layouts/ebook_form" %>
+          <div class="ebook-description">
+            <p>Eric has written a book to help people with their DUI Defense. <strong>Please click below to receive a FREE Copy.</strong></p>
+
+            <a href="/Eric-Sunness-DUI-Ebook.pdf" target="_blank" class="btn button-denim">Get Your Free Copy</a>
+            <%#= render partial: "layouts/ebook_form" %>
           </div>
         </div><!-- col -->
       </div><!-- row -->
